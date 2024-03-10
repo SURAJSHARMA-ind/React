@@ -5,6 +5,7 @@
 ### Topics Covered:
 - Basics of React
 - Setting up a React project using Vite
-- Introduction to props
+- Introduction to props and components.
+
 
 
