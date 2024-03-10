@@ -7,11 +7,12 @@
 
 **Bold Text**
 *Italic Text*
-```language
-Your code here
-
 
 ### Horizontal Rule:
 
 ```markdown
 ---
+
+```language
+Your code here
+
