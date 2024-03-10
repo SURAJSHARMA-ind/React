@@ -10,7 +10,7 @@
 
 ### Horizontal Rule:
 
-```markdown
+
 ---
 
 ```language
