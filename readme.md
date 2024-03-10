@@ -7,5 +7,7 @@
 - Setting up a React project using Vite
 - Introduction to props and components.
 
+## Lecture 02
+
 
 
