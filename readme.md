@@ -9,3 +9,8 @@
 *Italic Text*
 ```language
 Your code here
+
+### Horizontal Rule:
+
+```markdown
+---
