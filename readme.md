@@ -11,6 +11,7 @@
 
 ## Lecture 02
 ### Topics Covered:
+-Hooks in react
 
 
 
