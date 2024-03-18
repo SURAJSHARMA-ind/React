@@ -9,7 +9,7 @@
 ## 1 Props :
 In React, "props" (short for properties) are a fundamental concept used for passing data from one component to another. Props are read-only and help create dynamic and interactive React applications by allowing components to communicate and share data.
 
-## Lecture 02
+# Lecture 02
 ### Topics Covered:
 -Hooks in react
 .useState
