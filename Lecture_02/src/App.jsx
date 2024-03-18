@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 const [count,setcount] =useState(0) 
@@ -19,15 +20,13 @@ useEffect(()=>{
 console.log("btn click effect");
 },[count])
 
-useEffect(()=>{
-
-},[])
 
   return (
    <>
    {/* use state hook */}
    <h1>Current value {count}</h1>
    <button onClick={()=>{setcount(count+1)}}>Add Value</button>
+   <Navbar color={"yellow "} />
    </>
   )
 }
