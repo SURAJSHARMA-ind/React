@@ -13,7 +13,7 @@
 ### Topics Covered:
 -Hooks in react
 
-### 2 Hooks:
+# 2 Hooks:
 In Lecture 02, we learned about "hooks" in React. Hooks are tools that make it easier to work with data and how our app behaves. We explored two main hooks:
 
 #### 2.1 useState:
