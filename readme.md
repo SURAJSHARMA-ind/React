@@ -16,7 +16,7 @@ In React, "props" (short for properties) are a fundamental concept used for pass
 .useEffect
 
 ## Hooks:
-In Lecture 02, we learned about "hooks" in React. Hooks are tools that make it easier to work with data and how our app behaves. We explored two main hooks:
+In Lecture 02, we learned about "hooks" in React.  React Hooks are a powerful feature introduced in React version 16.8. They allow you to use various React features within functional components without the need for class components. Each React Hook name is prefixed with the word “use". 
 
 ### useState:
 useState is a React Hook that lets you add a state variable to your component. 

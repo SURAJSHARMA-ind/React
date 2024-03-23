@@ -1,32 +1,30 @@
-import './App.css'
-import { useEffect, useRef, useState } from 'react'
-import App_1 from './components/App_1'
+import React from 'react'
+import { useState,useEffect,useRef } from 'react'
 
-function App() {
-const [count,setcount] =useState(0)
+const App_1 = () => {
 
-const a = useRef(0)
+    const [count,setcount] =useState(0)
+    const ref = useRef(0)
+    //counter function
+    const counter = ()=>{
+    setcount(count+1);
+    }
+    // useEffect
+    useEffect(()=>{
+      ref.current.style.backgroundColor="red"
+    },[count])
+    
+      return (
+       <>
+       <h1>counter value is {count}</h1>
+       <button ref={ref} onClick={counter}>counter</button>
+       <button onClick={()=>{ref.current.style.display="none"}} >Hide btn </button>
 
-const counter = ()=>{
-setcount(count+1);
+       </>
+      )
 }
 
-useEffect(()=>{
-  a.current=a.current+1;
-  console.log(`value of a is ${a.current}`)
-},[count])
-
-  return (
-   <>
-   <h1>counter value is {count}</h1>
-   <button onClick={counter}>counter</button>
-   <h1>useEffect Dom manipulation</h1>
-   <App_1/>
-   </>
-  )
-}
-
-export default App
+export default App_1
 
 // ...........................Notes......................
 
