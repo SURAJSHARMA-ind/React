@@ -22,7 +22,7 @@ In Lecture 02, we learned about "hooks" in React.  React Hooks are a powerful fe
 useState is a React Hook that lets you add a state variable to your component. 
 const [state, setState] = useState(initialState)
 
-# Lecture 2.2 
+# Lecture 02_1 
 ### Topics Covered:
 - useEffect:
   
@@ -30,3 +30,10 @@ const [state, setState] = useState(initialState)
 useEffect helps us do things in our components when something changes. 
 For example, if we want to show a message when a button is clicked, we can use useEffect. 
 It's like saying, "Hey React, do this when something happens!".
+
+# Lecture 02_2 
+### Topics Covered:
+- useRef:
+  
+## useRef:
+useRef is a hook in React, a JavaScript library for building user interfaces. This hook is used to create a mutable reference that persists across renders of a component. It's commonly used for accessing or storing a reference to a DOM element or a value that needs to persist between renders without causing re-renders.
