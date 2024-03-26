@@ -1,33 +1,51 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, setcount] = useState(0)
+  const [showbtn, setshowbtn] = useState(false)
+  const [todo, settodo] = useState([
+    {
+      title: "todo title",
+      desc: "todo desc"
+    },
+    {
+      title: "todo title_2",
+      desc: "todo desc_2"
+    }
+  ])
+  // todo component.........................
+  const Todo = (todo) => {
+    return (
+      <>
+        <h1> {todo.heading}</h1>
+        <h1> {todo.desc} </h1>
+      </>
+    )
+  }
+  // todo component end ........................
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {showbtn ? <button>I will be shown only when another btn is clicked</button> : "nothing"}
+      {showbtn && <button>I will be shown only when another btn is clicked</button>}
+
+      <h1>counter is {count}</h1>
+      <button onClick={() => { setcount(setshowbtn(!showbtn)) }}>count btn</button>
+
+
+      {todo.map((item, index) => (
+
+        <div key={index}>
+          <ul className='m-4 text-3xl border-2 border-white'>
+            <h3>{item.title.toUpperCase()}</h3>
+            <li>{item.desc.toLowerCase()}</li>
+          </ul>
+          <Todo heading={item.title} desc={item.desc} />
+        </div>
+      ))}
+
+
+
     </>
   )
 }
