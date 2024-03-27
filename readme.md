@@ -11,9 +11,9 @@ In React, "props" (short for properties) are a fundamental concept used for pass
 ***
 # Lecture 02
 ### Topics Covered:
--Hooks in react
-.useState
-.useEffect
+- Hooks in react
+- useState
+- useEffect
 
 ## Hooks:
 In Lecture 02, we learned about "hooks" in React.  React Hooks are a powerful feature introduced in React version 16.8. They allow you to use various React features within functional components without the need for class components. Each React Hook name is prefixed with the word “use". 
@@ -40,9 +40,9 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 
 # Lecture 03
 ### Topics covered
--conditonal rendering
--Render list using map()
+- conditonal rendering
+- Render list using map()
 
 ## conditional rendering
--Conditional rendering in React allows components to render different output based on certain conditions.
--This can be achieved using conditional statements such as if or ternary operators within the JSX code.
+- Conditional rendering in React allows components to render different output based on certain conditions.
+- This can be achieved using conditional statements such as if or ternary operators within the JSX code.
