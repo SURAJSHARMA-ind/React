@@ -37,3 +37,12 @@ It's like saying, "Hey React, do this when something happens!".
   
 ## useRef:
 useRef is a hook in React, a JavaScript library for building user interfaces. This hook is used to create a mutable reference that persists across renders of a component. It's commonly used for accessing or storing a reference to a DOM element or a value that needs to persist between renders without causing re-renders.
+
+# Lecture 03
+### Topics covered
+-conditonal rendering
+-Render list using map()
+
+## conditional rendering
+-Conditional rendering in React allows components to render different output based on certain conditions.
+-This can be achieved using conditional statements such as if or ternary operators within the JSX code.
