@@ -35,7 +35,7 @@ function App() {
 
       {todo.map((item, index) => (
 
-        <div key={index}>
+       <div key={index}>
           <ul className='m-4 text-3xl border-2 border-white'>
             <h3>{item.title.toUpperCase()}</h3>
             <li>{item.desc.toLowerCase()}</li>
