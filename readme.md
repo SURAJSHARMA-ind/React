@@ -46,3 +46,15 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 ## conditional rendering
 - Conditional rendering in React allows components to render different output based on certain conditions.
 - This can be achieved using conditional statements such as if or ternary operators within the JSX code.
+
+# Lecture 04 
+### Topics covered
+- Fetch api in react
+. Handling Responses: Processing the response using response.json() to extract JSON data.
+. Updating State: Storing the fetched data in state variables using React's useState hook.
+. Rendering Data: Dynamically rendering the fetched data in the user interface using map().
+
+# Lecture 05 
+### topic covered
+- Event Handling. 
+- Handling Form.
