@@ -57,4 +57,11 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 # Lecture 05 
 ### topic covered
 - Event Handling. 
-- Handling Form.
+- Handling Form. (use spread operator)
+
+``` 
+ const onClickHandler = () => {
+    setMyDetail({ ...myDetail , myname:"Sam" })
+    // ...myDetail =  The triple dots are known as the spread operator, which takes an iterable(array, string, or object) and expands the iterable to individual values.
+  } ```
+
