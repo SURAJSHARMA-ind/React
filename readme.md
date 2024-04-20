@@ -55,7 +55,7 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 . Rendering Data: Dynamically rendering the fetched data in the user interface using map().
 
 # Lecture 05 
-### topic covered
+### Topics covered
 - Event Handling. 
 - Handling Form. (use spread operator)
 
@@ -63,5 +63,16 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
  const onClickHandler = () => {
     setMyDetail({ ...myDetail , myname:"Sam" })
     // ...myDetail =  The triple dots are known as the spread operator, which takes an iterable(array, string, or object) and expands the iterable to individual values.
-  } ```
+  } 
+  ```
+
+# Lecture 06
+### Create TodoList
+
+## Add features like:
+- Add todo.
+- Edit todo. 
+- Delete todo.
+- Sorting todos. (All todos , Completed , Not Completed)
+
 
