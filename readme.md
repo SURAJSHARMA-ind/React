@@ -67,12 +67,15 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
   ```
 
 # Lecture 06
-### Create TodoList
+### Create a TodoList
 
 ## Add features like:
 - Add todo.
 - Edit todo. 
 - Delete todo.
 - Sorting todos. (All todos , Completed , Not Completed)
+
+# Lecture 07
+### Create a Password_generator
 
 
