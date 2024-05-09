@@ -55,7 +55,7 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login />} />
       <Route path='contact' element={<Contactus />} />
       <Route path='about' element={<About />} >
-        <Route path='surajsharma' element={<Surajabout />}/>
+        <Route path='surajsharma' element={<Surajabout />} />
       </Route>
       <Route path='user/:userid' element={<User />} />
     </Route>
