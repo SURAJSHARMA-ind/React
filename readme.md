@@ -76,13 +76,13 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - Sorting todos. (All todos , Completed , Not Completed)
 
 # Lecture 07
-### Password generator 
+- Password generator 
 
 # Lecture 08
-### React Router
+- React Router
 
 # Lecture 09
-### Prop drilling
-### useContext hook
+- Prop drilling
+- useContext hook
 
 ![prop drilling image](<Prop drilling.png>)
