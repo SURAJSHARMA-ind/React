@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
+import Navbar from "./components/withoutContextApi/Navbar"
 function App() {
   const [count, setCount] = useState(0)
   
@@ -11,6 +11,8 @@ function App() {
   <>
   <h1>count is : {count}</h1>
   <button onClick={counter}>count</button>
+
+  <Navbar counter={{count,setCount}}/>
   </>
   )
 }
