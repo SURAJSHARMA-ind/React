@@ -81,3 +81,8 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 # Lecture 08
 ### React Router
 
+# Lecture 09
+### Prop drilling
+### useContext hook
+
+![prop drilling image](<Prop drilling.png>)
