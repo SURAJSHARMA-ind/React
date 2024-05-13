@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <counterContext.Provider value={{count,setCount}}>
+        
 
         <h1>count is : {count}</h1>
         <button onClick={counter}>count</button>

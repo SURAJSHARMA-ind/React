@@ -1,0 +1,10 @@
+
+.flex{
+display: flex;
+justify-content: left;
+gap: 2rem;
+}
+
+body{
+  background-color:gray;
+}
