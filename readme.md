@@ -89,3 +89,12 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - useContext hook
 
 ![prop drilling image](<Prop drilling.png>)
+
+# Lecture 10
+### Cart Clone
+- Add To Cart feature.
+- Use api to fetch data.
+- Use react router.
+- Use useContext hook.
+- Use Local Storage.
+
