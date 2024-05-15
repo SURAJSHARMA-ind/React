@@ -1,21 +1,20 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import Product from './components/products';
-import Navbar from './components/Navbar';
+import {Outlet} from 'react-router-dom' 
+import Header from './components/Header';
+import Products from './components/Products'
 
 function App() {
 
   return (
     <>
-    <Navbar/>
-    <div className='flex m-5'>
-    <Product title="Card1"/>
-    <Product title="Card2"/>
-    <Product title="Card3"/>
-    <Product title="Card4"/>
+    <Header/>
     
-    </div>
+    {/* <Products/> */}
+    <Outlet/>
+    {/* <Footer/>     */}
+    
     </>
   )
 }

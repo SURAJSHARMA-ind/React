@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
-import { Home, Login, Contactus, About, User, Surajabout } from "./components/index.js"
+import { Home, Login, Contactus, About,User , Surajabout } from './components/index'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
 import Layout from './Layout.jsx'
 
@@ -55,8 +54,8 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login />} />
       <Route path='contact' element={<Contactus />} />
       <Route path='about' element={<About />} >
-        <Route path='surajsharma' element={<Surajabout />} />
-      </Route>
+        <Route path='surajsharma' element={<Surajabout/>}/>
+        </Route>
       <Route path='user/:userid' element={<User />} />
     </Route>
   )

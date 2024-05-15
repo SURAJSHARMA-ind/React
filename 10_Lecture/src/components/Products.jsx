@@ -1,27 +1,39 @@
-import { useState } from 'react';
+// import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Product(props) {
-  const [count , setCount] =useState(0)
-  const counter = () => {
-    setCount(count+1)
-  }
-  
+function Products() {
+
+  const [count, setCount] = useState(0)
+
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://fakestoreapi.com/products");
+      const jsonData = await response.json();
+      setData(jsonData)
+    }
+    fetchData()
+  }, [])
+
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://static.toiimg.com/thumb/101136807.cms?width=680&height=512&imgsize=92736" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button onClick={counter} variant="primary">Add TO Cart </Button>
-        <span className='m-5'>{count}</span>
-      </Card.Body>
-    </Card>
+    <>
+    <div className='flex'>
+    {data.map((product) => {
+      return<Card key={product.id} style={{ width: '12rem ', backgroundColor:"#D3D3D3" }}>
+        <Card.Img variant="top" style={{width:"9.8rem", objectFit:"fit"}} src={product.image} />
+        <Card.Body>
+          <Card.Title style={{fontSize:"medium"}}>{product.title}</Card.Title>
+        </Card.Body>
+      </Card>
+       })}
+    </div>
+      
+    </>
+
   );
 }
 
-export default Product;
+export default Products;

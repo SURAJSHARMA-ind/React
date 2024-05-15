@@ -2,17 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
-function BasicExample() {
+function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+          <Nav className="me-auto gap-4">
+            <Link to="/products"  ><span>Products</span></Link>
+            <Link to="/cart" ><span>Cart</span></Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -20,4 +21,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Header;

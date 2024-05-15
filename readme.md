@@ -83,6 +83,7 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
   
 # Lecture 08
 - React Router
+- problem in /about/surajsharma & problem in user:userid
 
 # Lecture 09
 - Prop drilling
@@ -95,6 +96,6 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - Add To Cart feature.
 - Use api to fetch data.
 - Use react router.
-- Use useContext hook.
+- Use useContext hook.h
 - Use Local Storage.
 
