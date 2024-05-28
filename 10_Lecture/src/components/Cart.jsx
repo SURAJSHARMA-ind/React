@@ -1,9 +1,19 @@
 import React from 'react'
+import { cartData } from './context'
+import { useContext } from 'react'
+
 
 function Cart() {
+
+  const value = useContext(cartData)
   return (
     <>
-      <h1>Cart</h1>
+   { value.cartItems.map((product)=>{
+    return(
+      <h1>{product.title}</h1>
+    )
+   })}
+      
     </>
   )
 }

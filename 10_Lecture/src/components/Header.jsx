@@ -8,11 +8,10 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
+        <Navbar.Brand > <Link to="/">Home</Link> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto gap-4">
-            <Link to="/products"  ><span>Products</span></Link>
             <Link to="/cart" ><span>Cart</span></Link>
           </Nav>
         </Navbar.Collapse>
