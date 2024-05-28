@@ -86,16 +86,23 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - problem in /about/surajsharma & problem in user:userid
 
 # Lecture 09
-- Prop drilling
-- useContext hook
+- Prop drilling : Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. 
+
+- useContext hook : It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
 
 ![prop drilling image](<Prop drilling.png>)
 
 # Lecture 10
-### Cart Clone
+## Cart Clone
+ <b>status</b> : Not completed yet
 - Add To Cart feature.
 - Use api to fetch data.
 - Use react router.
 - Use useContext hook.h
 - Use Local Storage.
+
+
+# Lecture 11
+
+
 
