@@ -24,7 +24,7 @@ function App() {
         card.map((item) => {
           return (<div key={item.id} className="card">
               <h1>{item.title}</h1>
-              <img src={item.images} alt="" />
+              <img src={item.images} alt=""  width={"30%"} />
             </div>
           );
         })

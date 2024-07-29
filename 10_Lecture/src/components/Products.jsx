@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useParams } from 'react-router-dom';
-import { fetchData, cartData, cartData } from './context';
+import { fetchData, cartData } from './context';
 
 
 
@@ -13,6 +13,7 @@ function Products() {
 
   const [cartItems, setCartItems] = useState([])
   const [quantity, setQuantity] = useState(1)
+
 
   // useParam 
   const { productid } = useParams()
@@ -48,7 +49,7 @@ function Products() {
 
               <Card className='m-5' style={{ width: '15rem' }}>
                 <Card.Title>{productid}</Card.Title>
-                <Card.Img variant="top" className='m-5' style={{ width: '8rem' }} src={product.image} />
+                <Card.Img variant="top" className='m-5 ' style={{ width: '8rem' }    } src={product.image} />
                 <Card.Body>
                   <p> <b>{`Price : $${product.price}`}</b></p>
                 </Card.Body>
