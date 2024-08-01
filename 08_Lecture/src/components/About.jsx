@@ -1,6 +1,11 @@
 import React from 'react'
+import { Outlet,useLocation  } from 'react-router-dom';
 export default function About() {
+    const location = useLocation();
+    const isSurajabout = location.pathname === '/about/surajsharma'; // check url matches or not
   return (
+    // condition check
+    !isSurajabout?
       <div className="py-16 bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
               <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -26,6 +31,6 @@ export default function About() {
                   </div>
               </div>
           </div>
-      </div>
+      </div>:<Outlet/>
   );
 }
