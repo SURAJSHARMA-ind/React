@@ -1,27 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from "./components/withContextApi/Navbar"
-import counterContext from './components/withContextApi/context'
-function App() {
-  const [count, setCount] = useState(0)
+import React from 'react'
+import Login from './components/Login'
+import Profile from './components/Profile'
+import UserContextProvider from './Context/UserContextProvider'
 
-  const counter = () => {
-    setCount(count + 1)
-  }
+
+export default function App() {
   return (
-    <>
-      <counterContext.Provider value={{count,setCount}}>
-        
-
-        <h1>count is : {count}</h1>
-        <button onClick={counter}>count</button>
-        {/* withoutContextApi */}
-        {/* <Navbar counter={{ count, setCount }} /> */}
-        <Navbar/>
-
-      </counterContext.Provider>
-    </>
+    <UserContextProvider>
+      <Profile/>
+      <Login/>
+    </UserContextProvider>
   )
 }
-
-export default App
