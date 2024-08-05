@@ -82,8 +82,11 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - copy password to clipboard
   
 # Lecture 08
+### Topics covered
 - React Router
-- problem in /about/surajsharma & problem in user:userid
+- useLocation: Provides information about the current URL, pathname, and query parameters.
+- Outlet: Renders nested route content in a parent route component.
+- useParams: For Dynamic routing we use useParams hook which is Used to handle URLs with variable segments, such as product IDs in e-commerce applications.
 
 # Lecture 09
 - Prop drilling : Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. 
