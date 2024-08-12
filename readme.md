@@ -67,7 +67,7 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
   ```
 
 # Lecture 06
-### Create a TodoList : (https://todo-react-js-phi.vercel.app/)
+### Create a TodoList : [Live Preview](https://todo-react-js-phi.vercel.app/)
 ## Add features like:
 - Add todo.
 - Edit todo. 
@@ -75,7 +75,7 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - Sorting todos. (All todos , Completed , Not Completed)
 
 # Lecture 07
-### Create Password generator : (https://password-generator-orpin-theta.vercel.app/)
+### Create Password generator :  [Live Preview](https://password-generator-orpin-theta.vercel.app/)
 ## Add features like:
 - Include Numbers,Special Characters to password.
 - Set range of password
