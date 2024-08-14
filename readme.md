@@ -89,6 +89,7 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 - useParams: For Dynamic routing we use useParams hook which is Used to handle URLs with variable segments, such as product IDs in e-commerce applications.
 
 # Lecture 09
+### Topics covered
 - Prop drilling : Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. 
 
 - useContext hook : It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
@@ -106,6 +107,88 @@ useRef is a hook in React, a JavaScript library for building user interfaces. Th
 
 
 # Lecture 11
+### Create a Counter using redux toolkit
+### Topics covered
+- <b>Redux toolkit</b> : Redux Toolkit is an official, recommended library that provides a set of tools to simplify the use of Redux for managing application state. It helps reduce boilerplate code, simplifies the setup process, and includes utilities for common tasks like creating reducers, handling asynchronous logic, and configuring the Redux store.
 
+- <b>Store</b>:  The Redux store is a centralized place to manage the global state of your application. It holds the entire state tree of your app and allows you to dispatch actions to change this state.
 
+### configureStore : 
 
+```
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './counterSlice';
+
+const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+
+export default store;
+
+```
+- <b>Reducer</b> : A reducer is a function that determines how the state of your application changes in response to an action. In Redux Toolkit, reducers are often defined within slices using createSlice. 
+
+- <b>Slice</b> : A slice is a collection of Redux reducer logic and actions for a specific feature of your application. Redux Toolkit's createSlice function allows you to define a slice, which includes the state, reducers, and action creators.
+
+```
+import { createSlice } from '@reduxjs/toolkit';
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: { value: 0 },
+  reducers: {
+    increment: (state) => {
+      state.value += 1;
+    },
+    decrement: (state) => {
+      state.value -= 1;
+    },
+  },
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+
+```
+
+- <b> useSelector</b>: useSelector is a hook provided by React-Redux that allows you to extract data from the Redux store state. It takes a selector function as an argument, which is used to select a piece of state from the store.
+
+- <b>useDispatch</b> : useDispatch is a hook that gives you access to the dispatch function from the Redux store. It allows you to send actions to the Redux store, which can then update the state.
+
+```
+// Import necessary dependencies
+import './App.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { decrement, increment } from './redux/counter/counterSlice'
+import { Link } from 'react-router-dom'
+import Navbar from './component/Navbar'
+
+function App() {
+  // useSelector: Extracts the current count value from the Redux store
+  const count = useSelector((state) => state.counter.value)
+
+  // useDispatch: Returns the dispatch function to send actions to the Redux store
+  const dispatch = useDispatch()
+
+  return (
+    <>
+      
+      <Link to={'/navbar'}>Navbar</Link>
+      
+      {/* Display the current count */}
+      <h1>count is {count}</h1>
+      
+      {/* Button to increment the count */}
+      <button onClick={() => dispatch(increment())}>increment</button>
+
+      {/* Button to decrement the count (optional) */}
+      <button onClick={() => dispatch(decrement())}>decrement</button>
+    </>
+  )
+}
+
+export default App
+
+```
