@@ -39,12 +39,7 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
-            to="/contact"
-            className="text-gray-300 hover:text-white transition duration-300"
-          >
-            Contact
-          </Link>
+          
         </div>
 
         {/* Cart & Account Icons */}
